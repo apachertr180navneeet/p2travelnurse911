@@ -1,0 +1,45 @@
+<script type="text/javascript">
+   var remarks;
+   $(document).ready(function(e) {
+
+      $('.invoice-items-table tbody tr.main .remarks').on('change paste',function(){
+         remarks = $(this).val();
+      });
+
+      if (!$('.invoice-items-table thead tr th.remark').length) {
+         $('.invoice-items-table thead tr th:eq(6)').after('<th width="20%" align="left" class="remark">Remarks</th>');
+         $('.invoice-items-table tbody tr td:eq(6)').after('<td><textarea name="remarks" class="form-control remarks" rows="4" placeholder="Remarks"></textarea></td>');
+      }
+
+      $(document).on('click', '.add_item_btn', function() {
+         /*var remarks = $('.invoice-items-table tbody tr.main .remarks').val();*/
+         
+         /*$('.invoice-items-table tbody tr.item').last().find('.remarks').val(remarks);*/
+
+         $('.invoice-items-table tbody tr.item').last().find('td:eq(6)').after('<td><textarea name="remarks" class="form-control remarks" rows="4" placeholder="Remarks">' + remarks + '</textarea></td>');
+
+         remarks = '';
+         
+         $('.invoice-items-table tbody tr.item').each(function() {
+            $(this).find('input[type="number"],textarea').attr('readonly', true)
+            $(this).find('.dropdown').addClass('disable-select-picker');
+         });
+
+
+      });
+
+      $('#clientid').on('change', function() {
+         var thiss = $(this);
+         var clientid = thiss.val();
+         $('#duedate').val('');
+         if (clientid != '') {
+            //ajax
+            //$('#duedate').val(res.due_date);
+         }
+
+      });
+
+
+
+   });
+</script>

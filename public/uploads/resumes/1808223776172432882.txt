@@ -1,0 +1,26 @@
+Display
+
+1. Screen Size - 43 Inch
+2. Screen Resoulation - 4K
+3. Type - IPS LED
+4. Refresh Rate - 60
+5. HDR 10 / Dolby Vision
+6. Contrast Ratio - High
+
+Sound
+
+1. Min 20 Watt (Dolby)
+
+Hardware & Software
+
+1. Processor - Min Quad Core (1.5 GHz)	
+2. Ram - 2 GB
+3. Rom - 8 GB
+4. OS - Android/Smart
+
+Remote & Connectivity
+
+1. USB Port - 3
+2. HDMI Port - 2 
+3. Bluetooth/Build in WiFi/3.5 MM Jack/ChromeCast/HDMI Arc
+4. Voice Command in Remote
